@@ -1,192 +1,356 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Qui's CV</title>
-    <link rel="stylesheet" href="CV/assets/style.css">
-    <script src="https://kit.fontawesome.com/6d402694d7.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quí's CV</title>
+
+    <!-- BOX ICON -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="shortcut icon" href="assets/img/short-icon.png" type="image/x-icon">
+
+    <!-- ==== CSS====== -->
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-<body>
-<div class="resume">
-    <div class="resume_left">
-        <div class="resume_profile">
-            <img src="CV/images/profile.jpg" alt="profile_picture" style="width: 280px">
+<body  >
+
+    <!-- ====== HEADER ====  -->
+    <header class="l-header" id="header"> 
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Qui</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link"><i class='bx bx-home nav__icon'></i>Trang Chủ</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link"><i class='bx bx-user nav__icon' ></i>Giới Thiệu</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link"><i class='bx bx-book nav__icon' ></i>Học Vấn</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link"><i class='bx bx-receipt nav__icon' ></i>Kĩ Năng</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link"><i class='bx bx-receipt nav__icon' ></i>Kinh nghiệm</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#project" class="nav__link"><i class='bx bx-category-alt nav__icon' ></i>Dự Án</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#certificates" class="nav__link"><i class='bx bx-award nav__icon' ></i>Chứng Chỉ</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#references" class="nav__link"><i class='bx bx-link-external nav__icon' ></i>Người Tham Chiếu</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt' ></i>
+            </div>
+        </nav>
+    </header>
+    
+    
+    <main class="l-main bd-container">
+    <!-- All elements within this div, is generated in PDF -->
+    <div class="resume" id="area-cv">
+        <div class="resume__left">
+            <!-- Home -->
+            <section class="home" id="home">
+                <div class="home__container section bd-grid">
+                    <div class="home__data bd-grid">
+                         <img src="/assets/img/avatar.jpg" alt="" class="home__img">
+                    
+                         <h1 class="home__title"><b>HOÀNG NGỌC QUÍ</b></h1>
+
+                         <h3>09/06/1995</h3>
+                         <h3 class="home__profession">Fresher PHP Developer</h3>
+
+                        <!-- Button to download cv saved in the pdf folder -->
+                        <div>
+                            <a href="/assets/pdf/QuiCV.pdf" download="">Download CV</a>
+                        </div>
+                    </div>
+
+                    <div class="home__address bg-grid">
+                        <span class="home__information">
+                            <i class='bx bx-map home__icon' ></i> 182C, Chi Lăng, P.Phú Cát, TP.Huế
+                        </span>
+
+                        <span class="home__information">
+                            <i class='bx bx-envelope-open home__icon' ></i> quipht@gmail.com
+                        </span>
+
+                        <span class="home__information">
+                            <i class='bx bx-phone home__icon'></i> 0968.48.68.33
+                        </span> 
+
+                        
+                        <span class="home__information">
+                            <i class='bx bxl-github social__icon' ></i> <a href="https://github.com/quihoang95">quihoang95</a>
+                        </span> 
+
+                    </div>
+                </div>
+
+                <!-- Button to generate and download pdf -->
+<!--                <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>-->
+            </section>
+
+
+
+            <!-- =============Profile =======-->
+            <section class="profile section" id="profile">
+                <h2 class="section-title">Giới Thiệu</h2>
+
+                <p class="profile__description">
+                    Xin chào! Tôi là Hoàng Ngọc Quí là một người khao khát phát triển bản thân, tinh thần học hỏi cao, với những kiến thức đã được học và gu thẩm mỹ cao, tôi mong được góp một phần nhỏ vào sự phát triển của công ty.
+
+                </p>
+            </section>
+
+
+            <!-- ===== EDUCATION ===== -->
+            <section class="education section" id="education">
+                <h2 class="section-title">Học Vấn</h2>
+
+                <div class="education__container bd-grid">
+                    <div class="education__content">
+                        <div class="education__time">
+                            <span class="education__rounder"></span>
+                            <span class="education__line"></span>
+                        </div>
+
+                        <div class="education__data bd-grid">
+                            <h3 class="education__title">Lập trình viên</h3>
+
+                            <span class="education__studies">Trung tâm CODEGYM</span>
+                            <span class="education__year">2020-2021</span>
+                        </div>
+                    </div>
+
+
+
+            
+                </div>
+            </section>
+
+
+            <!-- ==========SKILLS ========= -->
+
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Kỹ Năng</h2>
+
+                <div class="skills__content bd-grid">
+                    <ul class="skills__data">
+                        <li class="skills__name"> 
+                            <span class="skills__circle"></span>HTML
+                        </li>
+
+                        <li class="skills__name"> 
+                            <span class="skills__circle"></span>CSS
+                        </li>
+
+                        <li class="skills__name"> 
+                            <span class="skills__circle"></span>JavaScript
+                        </li>
+                    </ul>
+                    <!--  -->
+                    <ul class="skills__data">
+                        <li class="skills__name"> 
+                            <span class="skills__circle"></span>Angular
+                        </li>
+
+                        <li class="skills__name"> 
+                            <span class="skills__circle"></span>PHP
+                        </li>
+
+                        <li class="skills__name"> 
+                            <span class="skills__circle"></span>Laravel
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </div>
-        <div class="resume_content">
-            <div class="resume_item resume_info">
-                <div class="title">
-                    <p class="bold">Hoàng Ngọc Quí</p>
-                    <p class="regular">Developer</p>
+<!-- ==========end of resume left========= -->
+
+        <div class="resume__right">
+                <!-- ======== Experience  -->
+            <section class="experience section" id="experience">
+                <h2 class="section-title">Kinh Nghiệm</h2>
+
+                <div class="experience__container bd-grid">
+                    <div class="experience__content">
+                        <div class="experience__data bd-grid">
+                            <h3 class="experience__title">Nhân viên kế hoạch</h3>
+                            
+                            <span class="experience__company">2014-2017 | Công Ty CP Phước Hiệp Thành</span>
+
+                            <p class="experience__description">
+                                - Quản lí công nhân.
+                                <br>
+                                - Quản lí xuất, nhập nguyên liệu và sản phẩm.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="experience__content">
+                        <div class="experience__data bd-grid">
+                            <h3 class="experience__title">Quản lí nhà hàng</h3>
+
+                            <span class="experience__company">2017-2018 | Nhà hàng Barapub</span>
+
+                            <p class="experience__description">
+                                - Quản lí nhà hàng.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="experience__content">
+                        <div class="experience__data bd-grid">
+                            <h3 class="experience__title">Nhân viên kinh doanh</h3>
+
+                            <span class="experience__company">2018-2019 | Shinhan Finance</span>
+
+                            <p class="experience__description">
+                                - Telesale, direct sale.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <ul>
-                    <li>
-                        <div class="icon"><i class="fas fa-map-signs"></i></div>
-                        <div class="data">
-                            182C, Chi Lăng, P.Phú Cát <br> TP.Huế
+            </section>
+
+            <!-- ========== PROJECT -->
+            <section class="project section" id="project">
+                <h2 class="section-title">Dự Án</h2>
+
+                <div class="project__container bd-grid">
+                    <div class="project__content">
+                        <div class="project__time">
+                            <div class="project__rounder"></div>
+                            <div class="project__line"></div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="icon"><i class="fas fa-mobile-alt"></i></div>
-                        <div class="data">
-                            +84 968486833
+
+                        <div class="project__data bd-grid">
+                            <h3 class="project__title">SHOP CHO BÉ</h3>
+
+                            <a href="https://samsara-coffee.netlify.app/" target="_blank"><span class="project__name"><i class='bx bx-link'></i>Trang Web bán sản phẩm cho bé | Fone's kid shop</span></a>
+                            
+                            <p class="project__description">
+                                - Học được cách đưa CSDL vào ứng dụng laravel.
+                                <br>
+                                - Tạo được một ứng dụng cơ bản với laravel.
+                                <br>
+                                - Link sản phẩm: http://foneskidshop.herokuapp.com/
+                            </p>
                         </div>
-                    </li>
-                    <li>
-                        <div class="icon"><i class="fas fa-envelope"></i></div>
-                        <div class="data">
-                            quipht@gmail.com
+                    </div>
+                    <!--  -->
+                    <div class="project__content">
+                        <div class="project__time">
+                            <div class="project__rounder"></div>
+                            <div class="project__line"></div>
                         </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="resume_item resume_skills">
-                <div class="title">
-                    <p class="bold">Kĩ năng</p>
+
+                        <div class="project__data bd-grid">
+                            <h3 class="project__title">QUẢN LÍ PHÒNG KHÁM</h3>
+
+                            <a href="http://tafitness.000webhostapp.com/" target="_blank"><span class="project__name"><i class='bx bx-link'></i>Trang Web quản lí phòng khám | NTP Clinic</span></a>
+                            
+                            <p class="project__description">
+                                - Học được cách làm việc nhóm.
+                                <br>
+                                - Áp dụng được mô hình Scrum.
+                                <br>
+                                - Link sản phẩm: https://ntpclinic.herokuapp.com/
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
-                <ul>
-                    <li>
-                        <div class="skill_name">
-                            HTML
-                        </div>
-                        <div class="skill_progress">
-                            <span style="width: 50%"></span>
-                        </div>
-                        <div class="skill_per">50%</div>
-                    </li>
-                    <li>
-                        <div class="skill_name">
-                            CSS
-                        </div>
-                        <div class="skill_progress">
-                            <span style="width: 40%"></span>
-                        </div>
-                        <div class="skill_per">40%</div>
-                    </li>
-                    <li>
-                        <div class="skill_name">
-                            JS
-                        </div>
-                        <div class="skill_progress">
-                            <span style="width: 30%"></span>
-                        </div>
-                        <div class="skill_per">30%</div>
-                    </li>
-                    <li>
-                        <div class="skill_name">
-                            JQUERY
-                        </div>
-                        <div class="skill_progress">
-                            <span style="width: 10%"></span>
-                        </div>
-                        <div class="skill_per">10%</div>
-                    </li>
-                </ul>
-            </div>
-            <div class="resume_item resume_social">
-                <div class="title">
-                    <p class="bold">Social</p>
+            </section>
+
+
+                <!-- ===== CERTIFICATES   -->
+            <section class="certificate section" id="certificates">
+                <h2 class="section-title">Chứng Chỉ</h2>
+
+                <div class="certificate__container bd-grid">
+                    <div class="certificate__content">
+                        <h3 class="certificate__title">Chứng Chỉ Lập Trình Viên PHP Codegym</h3>
+
+                    </div>
+
+                    <div class="certificate__content">
+                        <h3 class="certificate__title">SCRUM</h3>
+                    </div>
                 </div>
-                <ul>
-                    <li>
-                        <div class="icon"><i class="fab fa-facebook-square"></i></div>
-                        <div class="data">
-                            <p class="semi_bold">Facebook</p>
-                            <p>win.hoang.5</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon"><i class="fab fa-instagram"></i></div>
-                        <div class="data">
-                            <p class="semi_bold">Instagram</p>
-                            <p>win__0906</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon"><i class="fab fa-github-square"></i></div>
-                        <div class="data">
-                            <p class="semi_bold">Github</p>
-                            <p>quihoang95</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+
+            </section>
+
+            <!-- =====================Reference ========= -->
+            <section class="references section" id="references">
+                <h2 class="section-title">Người Tham Chiếu</h2>
+
+                <div class="references__container bd-grid">
+
+
+                    <div class="references__content bd-grid">
+                        <span class="references__subtitle">Giám đốc Trung tâm</span>
+
+                        <h3 class="references__title">Lê Tường Phúc</h3>
+
+                        <ul class="references__contact">
+                            <li>Phone: 0983.339.720</li>
+                            <li>Email: phuc.le@codegym.vn </li>
+                        </ul>
+                    </div>
+
+                          <!--  -->
+
+                    <div class="references__content bd-grid">
+                        <span class="references__subtitle">Giám Đốc Đào Tạo</span>
+
+                        <h3 class="references__title">Nguyễn Hữu Anh Khoa</h3>
+
+                        <ul class="references__contact">
+                            <li>Phone: 0935.216.417</li>
+                            <li>Email: khoa.nguyen@codegym.vn </li>
+                        </ul>
+                    </div>
+
+                 
+                </div>
+            </section>
+
+
+
         </div>
     </div>
-    <div class="resume_right">
-        <div class="resume_item resume_about">
-            <div class="title">
-                <p class="bold">Thông tin bản thân</p>
-            </div>
-            <p>Là một người thích tìm tòi,học hỏi, thích giao tiếp, và nhiệt tình trong công việc</p>
-            <br>
-            <p></p>
-        </div>
-        <div class="resume_item resume_work">
-            <div class="title">
-                <p class="bold">Kinh nghiệm làm việc</p>
-            </div>
-            <ul>
-                <li>
-                    <div class="date">2014-2017</div>
-                    <div class="info">
-                        <p class="semi-bold">Công ty Cổ phần Phước Hiệp Thành</p>
-                        <p>Chức vụ: Nhân viên kế hoạch</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="date">2017-2018</div>
-                    <div class="info">
-                        <p class="semi-bold">Nhà hàng Barapub</p>
-                        <p>Chức vụ: Quản lí nhà hàng</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="date">2018-2019</div>
-                    <div class="info">
-                        <p class="semi-bold">Shinhan Finance</p>
-                        <p>Chức vụ: Nhân viên kinh doanh</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="date">2019-Hiện tại</div>
-                    <div class="info">
-                        <p class="semi-bold">CodeGym Huế</p>
-                        <p>Chức vụ: Học viên</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="resume_item resume_education">
-            <div class="title">
-                <p class="bold">Bằng cấp</p>
-            </div>
-            <ul>
-                <li>
-                    <div class="date">2020</div>
-                    <div class="info">
-                        <p class="semi_bold">CodeGym Huế</p>
-                        <p>Khóa học PHP Bootcamp</p>
-                        <p>Học cách học</p>
-                        <p>Hoàn thành mọi việc với Kanban</p>
-                        <p>Scum Essence</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="resume_item resume_hobby">
-            <div class="title">
-                <p class="bold">Sở thích</p>
-            </div>
-            <ul>
-                <li><i class="fas fa-gamepad"></i></li>
-                <li><i class="fas fa-music"></i></li>
-                <li><i class="fas fa-book"></i></li>
-            </ul>
-        </div>
-    </div>
-</div>
+    </main>
+
+
+    <!-- ===SCROLL TOP === -->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bxs-up-arrow-alt scrolltop__icon' ></i>
+    </a>
+
+    <!-- HTML2 PDF -->
+    <script src="/assets/js/html2pdf.bundle.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="/assets/js/main.js"> </script>
 </body>
 </html>
